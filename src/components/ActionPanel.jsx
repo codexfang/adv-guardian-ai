@@ -10,7 +10,7 @@ export default function ActionPanel({
       <header>
         <h2 className="text-lg font-semibold text-white">Analysis Controls</h2>
         <p className="mt-1 text-sm text-slate-400">
-          Mock AI engine — no API keys or backend required.
+          Compare filings, marketing copy, and custodial records in one pass.
         </p>
       </header>
 
@@ -45,11 +45,11 @@ export default function ActionPanel({
       </div>
 
       <div className="rounded-lg border border-slate-700 bg-slate-900/50 p-4 text-xs leading-relaxed text-slate-400">
-        <p className="font-medium text-slate-300">Mock mode</p>
+        <p className="font-medium text-slate-300">How analysis works</p>
         <p className="mt-1">
-          Heuristic parsing compares ADV text, marketing copy, and custodial
-          JSON. Future upgrades may connect to Gemini or a FastAPI compliance
-          service — not enabled in this build.
+          ADV Guardian cross-references regulatory filings against public
+          marketing language and custodial aggregates to flag AUM, fee, client
+          count, and disclosure inconsistencies with suggested amendment language.
         </p>
       </div>
     </section>

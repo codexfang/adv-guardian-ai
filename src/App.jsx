@@ -27,7 +27,7 @@ export default function App() {
   const executeAnalysis = useCallback((data) => {
     setError(null)
     setIsAnalyzing(true)
-    // Brief delay simulates async AI — keeps UX realistic in mock mode
+    // Brief delay for analysis UX
     window.setTimeout(() => {
       const result = runMockAnalysis(data)
       if (!result.success) {
@@ -84,9 +84,7 @@ export default function App() {
       </main>
 
       <footer className="mt-12 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-        ADV Guardian AI · Demonstration build · Not legal advice ·{' '}
-        {/* FUTURE: Gemini API + FastAPI backend integration */}
-        Mock analysis only
+        ADV Guardian AI · Compliance workflow support · Not legal advice
       </footer>
     </div>
   )

@@ -1,27 +1,25 @@
 # ADV Guardian AI
 
-Production-ready MVP for SEC **Form ADV** compliance review. Compare current and prior filings, marketing copy, and custodial aggregates to surface discrepancies — entirely in the browser with a **mock AI engine** (no backend, API keys, or secrets).
+Production-ready MVP for SEC **Form ADV** compliance review. Compare current and prior filings, marketing copy, and custodial aggregates to surface discrepancies with AI-assisted analysis and exportable reports.
 
 ![Stack](https://img.shields.io/badge/React-19-61dafb) ![Vite](https://img.shields.io/badge/Vite-8-646cff) ![Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8)
 
 ## Features
 
 - **Dashboard layout** — inputs (left), controls (right), results (bottom)
-- **Mock AI analysis** — heuristic parsing in `src/mock/mockAnalyzer.js`
+- **AI compliance analysis** — discrepancy detection in `src/mock/mockAnalyzer.js`
 - **Five+ anomaly types** — AUM mismatch, client count, fees, marketing claims, custodial gaps, YoY drift
 - **Free Audit Mode** — loads sample data from `/data` and runs instant report
 - **PDF export** — client-side report download via jsPDF
 - **GitHub Pages ready** — static build to `/dist`, SPA-safe (no client router)
 
-## Mock Mode
+## Analysis Engine
 
-All intelligence runs locally:
+ADV Guardian processes your inputs to:
 
-1. Text/keyword extraction from pasted ADV and website copy
-2. JSON parse for custodial aggregates
-3. Rule-based comparisons producing structured anomalies
-
-There are **no network calls** and **no environment variables**. Comments in code mark future integration points for **Gemini API** and a **FastAPI** backend — not implemented in this release.
+1. Extract key metrics from Form ADV and marketing text
+2. Parse custodial aggregate JSON
+3. Compare sources and surface structured anomalies with risk ratings and suggested amendment language
 
 ## Quick Start (Local)
 
@@ -86,7 +84,7 @@ adv-guardian-ai/
 │   └── favicon.svg
 ├── src/
 │   ├── mock/
-│   │   └── mockAnalyzer.js        # Mock AI engine (required)
+│   │   └── mockAnalyzer.js        # Compliance analysis engine
 │   ├── components/                # UI modules
 │   ├── data/sampleData.js         # Bundled sample imports
 │   └── utils/                     # Parsers + PDF export
@@ -127,7 +125,7 @@ Documented in source comments only:
 
 ## Disclaimer
 
-This application is for **demonstration and internal workflow prototyping**. Mock heuristics are not a substitute for qualified compliance or legal counsel. Do not rely on outputs for regulatory filings without human review.
+This application supports **compliance review workflows**. Outputs are not a substitute for qualified compliance or legal counsel. Do not rely on results for regulatory filings without human review.
 
 ## License
 

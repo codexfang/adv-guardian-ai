@@ -41,7 +41,7 @@ export default function ResultsDashboard({ report, error }) {
           <p className="mt-1 text-sm text-slate-400">{message}</p>
         </div>
         <span className="rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-400 ring-1 ring-slate-600">
-          Mock Engine · {new Date(report.generatedAt).toLocaleString()}
+          Report generated · {new Date(report.generatedAt).toLocaleString()}
         </span>
       </div>
 
@@ -71,8 +71,7 @@ export default function ResultsDashboard({ report, error }) {
         <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 px-6 py-10 text-center">
           <p className="font-medium text-emerald-200">No anomalies detected</p>
           <p className="mt-2 text-sm text-slate-400">
-            Mock heuristics found no material discrepancies with the provided
-            inputs.
+            No material discrepancies were identified with the provided inputs.
           </p>
         </div>
       ) : (

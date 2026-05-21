@@ -33,7 +33,7 @@ export default function InputPanel({ values, onChange }) {
       <header>
         <h2 className="text-lg font-semibold text-white">Filing Inputs</h2>
         <p className="mt-1 text-sm text-slate-400">
-          All analysis runs locally in your browser — mock mode only.
+          Provide filing text and supporting materials for automated discrepancy review.
         </p>
       </header>
 

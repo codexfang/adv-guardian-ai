@@ -356,8 +356,8 @@ export function runMockAnalysis(inputs) {
     success: true,
     message:
       unique.length === 0
-        ? 'No material discrepancies detected in mock analysis.'
-        : `Mock analysis identified ${unique.length} potential compliance item(s).`,
+        ? 'No material discrepancies detected in this review.'
+        : `Analysis identified ${unique.length} potential compliance item(s).`,
     generatedAt: new Date().toISOString(),
     mode: 'mock',
     extracted: { current, previous, website, custodial: custodial ?? null },

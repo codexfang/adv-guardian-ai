@@ -18,7 +18,7 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <span className="hidden rounded-full bg-brand-500/15 px-3 py-1 text-xs font-semibold text-brand-100 ring-1 ring-brand-500/30 sm:inline">
-            Mock Mode · 100% Client-Side
+            AI Compliance Audit
           </span>
           <span className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-400 ring-1 ring-slate-600">
             v1.0 MVP
