@@ -1,0 +1,27 @@
+FORM ADV — PART 1A
+Investment Adviser: Meridian Capital Partners, LLC
+CRD Number: 123456
+SEC File Number: 801-98765
+
+Item 5 — Information About Your Advisory Business
+
+5.F.(2)(c) Regulatory Assets Under Management:
+Total regulatory AUM: $847,500,000 (as of 12/31/2025)
+
+5.D.(1) Approximate number of advisory clients: 312
+
+Item 6 — Other Business Activities
+No other business activities requiring disclosure.
+
+Item 5.E — Compensation Arrangements
+(1) Percentage of assets under management: Yes — tiered schedule from 0.75% to 1.25% annually
+(2) Hourly charges: No
+(3) Fixed fees: Yes — financial planning engagements up to $15,000
+(4) Performance-based fees: No
+
+Item 12 — Small Adviser
+Not applicable — assets exceed $25 million threshold.
+
+Custody: The adviser maintains custody of client assets through qualified custodians per Rule 206(4)-2.
+
+Discretionary authority: 89% of client accounts.

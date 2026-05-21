@@ -1,0 +1,31 @@
+{
+  "firmName": "Meridian Capital Partners, LLC",
+  "reportingPeriod": "2025-Q4",
+  "custodians": [
+    {
+      "name": "Schwab Institutional",
+      "accounts": 198,
+      "reportedAUM": 512400000
+    },
+    {
+      "name": "Fidelity IWS",
+      "accounts": 89,
+      "reportedAUM": 278100000
+    }
+  ],
+  "aggregate": {
+    "totalAccounts": 287,
+    "totalAUM": 790500000,
+    "discretionaryAccounts": 255,
+    "nonDiscretionaryAccounts": 32
+  },
+  "feeSchedulesOnFile": [
+    {
+      "type": "AUM",
+      "minRate": 0.0075,
+      "maxRate": 0.0125,
+      "notes": "Tiered by asset band"
+    }
+  ],
+  "lastReconciliation": "2026-01-15"
+}

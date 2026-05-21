@@ -1,0 +1,57 @@
+export default function ActionPanel({
+  onRunAnalysis,
+  onFreeAudit,
+  isAnalyzing,
+  hasReport,
+  onDownloadPdf,
+}) {
+  return (
+    <section className="flex flex-col gap-4 rounded-xl border border-slate-700/80 bg-slate-850/60 p-5">
+      <header>
+        <h2 className="text-lg font-semibold text-white">Analysis Controls</h2>
+        <p className="mt-1 text-sm text-slate-400">
+          Mock AI engine — no API keys or backend required.
+        </p>
+      </header>
+
+      <div className="flex flex-col gap-3">
+        <button
+          type="button"
+          onClick={onRunAnalysis}
+          disabled={isAnalyzing}
+          className="w-full rounded-lg bg-brand-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 transition hover:bg-brand-500 disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          {isAnalyzing ? 'Analyzing…' : 'Run Analysis'}
+        </button>
+
+        <button
+          type="button"
+          onClick={onFreeAudit}
+          disabled={isAnalyzing}
+          className="w-full rounded-lg border border-slate-500 bg-slate-800 px-4 py-3 text-sm font-semibold text-slate-100 transition hover:border-brand-500/50 hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          Free Audit Mode
+        </button>
+
+        {hasReport && (
+          <button
+            type="button"
+            onClick={onDownloadPdf}
+            className="w-full rounded-lg border border-emerald-600/40 bg-emerald-600/10 px-4 py-3 text-sm font-semibold text-emerald-300 transition hover:bg-emerald-600/20"
+          >
+            Download Report (PDF)
+          </button>
+        )}
+      </div>
+
+      <div className="rounded-lg border border-slate-700 bg-slate-900/50 p-4 text-xs leading-relaxed text-slate-400">
+        <p className="font-medium text-slate-300">Mock mode</p>
+        <p className="mt-1">
+          Heuristic parsing compares ADV text, marketing copy, and custodial
+          JSON. Future upgrades may connect to Gemini or a FastAPI compliance
+          service — not enabled in this build.
+        </p>
+      </div>
+    </section>
+  )
+}
