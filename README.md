@@ -9,7 +9,6 @@ Production-ready MVP for SEC **Form ADV** compliance review. Compare current and
 - **Five+ anomaly types** — AUM mismatch, client count, fees, marketing claims, custodial gaps, YoY drift
 - **Try Sample Audit** — loads sample data from `/data` (then click Run Analysis)
 - **PDF export** — client-side report download via jsPDF
-- **GitHub Pages ready** — static build to `/dist`, SPA-safe (no client router)
 
 ## Analysis Engine
 
