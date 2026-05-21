@@ -9,7 +9,7 @@ Production-ready MVP for SEC **Form ADV** compliance review. Compare current and
 - **Dashboard layout** — inputs (left), controls (right), results (bottom)
 - **AI compliance analysis** — discrepancy detection in `src/mock/mockAnalyzer.js`
 - **Five+ anomaly types** — AUM mismatch, client count, fees, marketing claims, custodial gaps, YoY drift
-- **Free Audit Mode** — loads sample data from `/data` and runs instant report
+- **Try Sample Audit** — loads sample data from `/data` and runs instant report
 - **PDF export** — client-side report download via jsPDF
 - **GitHub Pages ready** — static build to `/dist`, SPA-safe (no client router)
 
@@ -96,7 +96,7 @@ adv-guardian-ai/
 
 1. Paste **Current Form ADV** (required).
 2. Optionally add **Previous ADV**, **Website claims**, and **Custodial JSON**.
-3. Click **Run Analysis** or **Free Audit Mode** for a demo dataset.
+3. Click **Run Analysis** or **Try Sample Audit** for a demo dataset.
 4. Review anomaly cards; expand technical details; **Download Report (PDF)**.
 
 ### Sample custodial JSON shape

@@ -30,7 +30,7 @@ export default function ActionPanel({
           disabled={isAnalyzing}
           className="w-full rounded-lg border border-slate-500 bg-slate-800 px-4 py-3 text-sm font-semibold text-slate-100 transition hover:border-brand-500/50 hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Free Audit Mode
+          Try Sample Audit
         </button>
 
         {hasReport && (

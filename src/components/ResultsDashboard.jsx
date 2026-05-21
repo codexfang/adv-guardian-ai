@@ -23,7 +23,7 @@ export default function ResultsDashboard({ report, error }) {
           No analysis yet
         </p>
         <p className="mt-2 text-sm text-slate-500">
-          Paste your Form ADV inputs and run analysis, or try Free Audit Mode
+          Paste your Form ADV inputs and run analysis, or use Try Sample Audit
           for an instant sample report.
         </p>
       </section>
