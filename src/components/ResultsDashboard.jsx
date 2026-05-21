@@ -10,7 +10,7 @@ const SUMMARY_COLORS = {
 export default function ResultsDashboard({ report, error }) {
   if (error) {
     return (
-      <section className="rounded-xl border border-red-500/40 bg-red-500/10 px-6 py-8 text-center">
+      <section className="rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-center">
         <p className="text-sm text-red-200">{error}</p>
       </section>
     )
@@ -18,13 +18,10 @@ export default function ResultsDashboard({ report, error }) {
 
   if (!report) {
     return (
-      <section className="rounded-xl border border-dashed border-slate-600 bg-slate-850/40 px-6 py-16 text-center">
-        <p className="text-lg font-medium text-slate-300">
-          No analysis yet
-        </p>
-        <p className="mt-2 text-sm text-slate-500">
-          Paste your Form ADV inputs and run analysis, or use Try Sample Audit
-          for an instant sample report.
+      <section className="rounded-lg border border-dashed border-slate-600/80 bg-slate-850/30 px-4 py-2.5 text-center">
+        <p className="text-sm font-medium text-slate-300">No analysis yet</p>
+        <p className="mt-1 text-xs text-slate-500">
+          Run Analysis above, or Try Sample Audit to load example inputs.
         </p>
       </section>
     )

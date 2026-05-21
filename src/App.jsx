@@ -50,9 +50,10 @@ export default function App() {
     executeAnalysis(inputs)
   }
 
-  const handleFreeAudit = () => {
+  const handleSampleAudit = () => {
     setInputs(sampleInputs)
-    executeAnalysis(sampleInputs)
+    setError(null)
+    setReport(null)
   }
 
   const handleDownloadPdf = () => {
@@ -60,30 +61,30 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="bg-slate-900">
       <Header />
 
-      <main className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
-          <div className="rounded-xl border border-slate-700/80 bg-slate-850/40 p-5 lg:max-h-[calc(100vh-12rem)] lg:overflow-hidden">
+      <main className="mx-auto max-w-[1600px] px-4 py-4 sm:px-6 lg:px-8">
+        <div className="grid items-stretch gap-4 lg:grid-cols-[1fr_300px]">
+          <div className="rounded-xl border border-slate-700/80 bg-slate-850/40 p-4">
             <InputPanel values={inputs} onChange={handleChange} />
           </div>
 
           <ActionPanel
             onRunAnalysis={handleRunAnalysis}
-            onFreeAudit={handleFreeAudit}
+            onSampleAudit={handleSampleAudit}
             isAnalyzing={isAnalyzing}
             hasReport={!!report?.success}
             onDownloadPdf={handleDownloadPdf}
           />
         </div>
 
-        <div className="mt-8">
+        <div className="mt-4">
           <ResultsDashboard report={report} error={error} />
         </div>
       </main>
 
-      <footer className="mt-12 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+      <footer className="mt-5 border-t border-slate-800 py-6 text-center text-sm text-slate-500">
         ADV Guardian AI · Compliance workflow support · Not legal advice
       </footer>
     </div>
