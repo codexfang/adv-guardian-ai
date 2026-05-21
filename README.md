@@ -40,16 +40,6 @@ ADV Guardian processes your inputs to:
 }
 ```
 
-## Future Upgrades (Not in MVP)
-
-Documented in source comments only:
-
-| Upgrade | Location |
-|--------|----------|
-| Gemini API | `src/mock/mockAnalyzer.js` |
-| FastAPI backend | `src/mock/mockAnalyzer.js`, `src/App.jsx` |
-| Server PDF templates | `src/utils/exportPdf.js` |
-
 ## Disclaimer
 
 This application supports **compliance review workflows**. Outputs are not a substitute for qualified compliance or legal counsel. Do not rely on results for regulatory filings without human review.
