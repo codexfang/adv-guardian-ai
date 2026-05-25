@@ -8,7 +8,7 @@ export default function Header() {
               ADV Guardian AI
             </h1>
             <p className="text-sm text-slate-400">
-              SEC Form ADV compliance intelligence
+              SEC Form ADV Compliance Intelligence
             </p>
           </div>
         </div>
