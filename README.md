@@ -45,4 +45,4 @@ This application supports **compliance review workflows**. Outputs are not a sub
 
 ## License
 
-MIT — use and modify for your organization’s internal tooling.
+MIT
