@@ -3,9 +3,6 @@ export default function Header() {
     <header className="border-b border-slate-700/80 bg-slate-850/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-600 text-lg font-bold text-white shadow-lg shadow-brand-600/30">
-            AG
-          </div>
           <div>
             <h1 className="text-xl font-bold tracking-tight text-white">
               ADV Guardian AI
