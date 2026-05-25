@@ -83,10 +83,6 @@ export default function App() {
           <ResultsDashboard report={report} error={error} />
         </div>
       </main>
-
-      <footer className="mt-5 border-t border-slate-800 py-6 text-center text-sm text-slate-500">
-        ADV Guardian AI · Compliance workflow support · Not legal advice
-      </footer>
     </div>
   )
 }
