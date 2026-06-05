@@ -43,6 +43,4 @@ ADV Guardian processes your inputs to:
 
 This application supports **compliance review workflows**. Outputs are not a substitute for qualified compliance or legal counsel. Do not rely on results for regulatory filings without human review.
 
-## License
 
-MIT
